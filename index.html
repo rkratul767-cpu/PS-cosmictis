@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Cosmictis Shop</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+
+    body{
+
+      font-family: Arial;
+
+      background:#fff0f5;
+
+      text-align:center;
+
+    }
+
+    .card{
+
+      background:white;
+
+      padding:15px;
+
+      margin:15px;
+
+      border-radius:12px;
+
+      box-shadow:0 0 10px rgba(0,0,0,0.1);
+
+    }
+
+    button{
+
+      background:#ff4da6;
+
+      color:white;
+
+      border:none;
+
+      padding:10px 20px;
+
+      border-radius:8px;
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<h1>🌸 Cosmictis Beauty Shop</h1>
+
+<p>100% Original Products</p>
+
+
+<div class="card">
+
+  <h3>Vitamin C Face Wash</h3>
+
+  <p>Price: 350৳</p>
+
+  <button onclick="order('Vitamin C Face Wash - 350৳')">Order Now</button>
+
+</div>
+
+
+<div class="card">
+
+  <h3>Hair Serum</h3>
+
+  <p>Price: 500৳</p>
+
+  <button onclick="order('Hair Serum - 500৳')">Order Now</button>
+
+</div>
+
+
+<div class="card">
+
+  <h2>💳 Payment Method</h2>
+
+  <p>bKash: 01XXXXXXXXX</p>
+
+  <p>Nagad: 01XXXXXXXXX</p>
+
+  <p>Payment করে WhatsApp এ screenshot পাঠান</p>
+
+</div>
+
+
+<script>
+
+function order(product){
+
+  let msg = "Hello, I want to order: " + product;
+
+  window.open("https://wa.me/8801XXXXXXXXX?text="+encodeURIComponent(msg));
+
+}
+
+</script>
+
+
+</body>
+
+</html>
+
